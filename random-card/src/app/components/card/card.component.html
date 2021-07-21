@@ -1,0 +1,41 @@
+<div class="card">
+    <div class="card-body text-center">
+        <img class="rounded-circle img-thumbnail border-success"
+         width="150" height="150" [src]="user.picture?.large" alt=""/>
+
+         <div class="card-title text-success">
+             <h1>
+                 <span class="px-2">{{user.name?.title}}.</span>
+                 <span class="px-2">{{user.name?.first}}</span>
+                 <span class="px-2">{{user.name?.last}}</span>
+             </h1>
+         </div>
+         <hr>
+         <div class="card-text">
+            <fa-icon [icon]="faEnvelope"></fa-icon>
+            {{ user.email }}
+          </div>
+         <div class="card-text">
+            <fa-icon [icon]="faMapMarkerAlt"></fa-icon>
+            {{ user.location?.city }} {{ user.location?.state }}, {{ user.location?.country }}-
+            {{ user.location?.street?.number }}
+          </div>
+          <div class="card-text">
+            <fa-icon [icon]="faPhoneAlt"></fa-icon>
+            {{ user.phone }}
+          </div>
+          
+          <div class="card-text">
+            <fa-icon [icon]="faAnchor"></fa-icon>
+            member since {{ user.registered?.date | date }}
+          </div>
+
+          
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-success" (click)="refresh()">Reload</button>
+        </div>
+    </div>
+</div>
