@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBOfjCc3QVmV8cWalDkcZ6WhNOEgphKqV8",
-    authDomain: "github-profile-finder-50849.firebaseapp.com",
-    projectId: "github-profile-finder-50849",
-    storageBucket: "github-profile-finder-50849.appspot.com",
-    messagingSenderId: "426378710681",
-    appId: "1:426378710681:web:9292be30c3b9fddb7cf208",
-    measurementId: "G-39XDQ0Z94C"
+    apiKey: " . . . ",
+    authDomain: ". . . ",
+    projectId: ". . . ",
+    storageBucket: ". . . ",
+    messagingSenderId: ". . . ",
+    appId: ". . . ",
+    measurementId: ". . . "
   }
 };
 
